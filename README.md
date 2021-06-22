@@ -1,6 +1,6 @@
 # Facebook Social Circle Analysis with NetworkX
 
-In this repo you can find a network analysis of Facebook social circles using NetworkX which is an open-source package. For tutorial you can check [this](https://github. com/CambridgeUniversityPress/FirstCourseNetworkScience/tree/master/tutorials). Firstly, a function is created to explore and summarize any network. It summarizes any induced subgraph of the input network.
+In this repo you can find a network analysis of Facebook social circles using NetworkX which is an open-source package. For tutorial you can check [this](https://github.com/CambridgeUniversityPress/FirstCourseNetworkScience/tree/master/tutorials). Firstly, a function is created to explore and summarize any network. It summarizes any induced subgraph of the input network.
 
 ## 1. Network Summaries
 
@@ -72,7 +72,7 @@ Below visualizations applied in the notebook:
 
 The node2vec algorithm is a popular algorithm that identifies vertex features (embeddings) for each vertex in an observed graph. These embeddings act as low-dimensional summaries of the vertices and can be used for machine learning tasks like clustering, classification, and prediction. Links to the source code, data, and publication are available here: https://snap.stanford.edu/ node2vec/.
 
-* Incorporated the node2vec algorithm (with default parameter settings) in the network analysis function. In particular, return D-dimensional embeddings for each vertex in the graph where D is chosen by the user as input. Verified that the new function works on the simple 20 node graph described in question 1 and set D = 10.
+* Incorporated the node2vec algorithm (with default parameter settings) in the network analysis function. In particular, return D-dimensional embeddings for each vertex in the graph where D is chosen by the user as input. Verified that the new function works on the simple 20 node graph with D = 10.
 * Ran node2vec on the ego networks for vertex 0 and 107 from the Facebook data with D = 30. With the embeddings, following machine learning tasks applied for the subgraphs of vertex 0 and 107:
     * Clustered the nodes using the node × embeddings matrix
     * A simple prediction model is built where the input features are the node embeddings and the response is the social circle label of the node.
